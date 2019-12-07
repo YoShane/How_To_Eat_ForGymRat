@@ -539,7 +539,7 @@ public class AppUI extends javax.swing.JFrame {
                     }
                     break;
                 case 2:
-                    food = conn.getFood(conn.getRandomFoodNum("肉類"));
+                    food = conn.getFood(conn.getRandomFoodNum("肉類", "魚類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
@@ -557,13 +557,13 @@ public class AppUI extends javax.swing.JFrame {
                         protein -= (food.getProtein() * food.getLimit());
                         fat -= (food.getFat() * food.getLimit());
                         carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-    
+
                     } else {
                         noGraspCount += 1;
                     }
                     break;
                 case 4:
-                    food = conn.getFood(conn.getRandomFoodNum("蔬菜類"));
+                    food = conn.getFood(conn.getRandomFoodNum("豆類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
@@ -575,28 +575,40 @@ public class AppUI extends javax.swing.JFrame {
                     }
                     break;
                 case 5:
+                    food = conn.getFood(conn.getRandomFoodNum("蔬菜類"));
+                    if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
+                        this.foodList.add_food(food, food.getLimit()); //放食物與數量
+                        protein -= (food.getProtein() * food.getLimit());
+                        fat -= (food.getFat() * food.getLimit());
+                        carbohydrate -= (food.getCarbohydrate() * food.getLimit());
+
+                    } else {
+                        noGraspCount += 1;
+                    }
+                    break;
+                case 6:
                     food = conn.getFood(conn.getRandomFoodNum("水果類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
                         fat -= (food.getFat() * food.getLimit());
                         carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-           
+
                     } else {
                         noGraspCount += 1;
                     }
                     break;
-                case 6:
-                    if (noGraspCount != 5) {
+                case 7:
+                    if (noGraspCount != 6) {
                         noGraspCount = 0;
-                    }else{
+                    } else {
                         makeGrasp = false; //全部都取不了 就跳出
                         this.foodList.showAll();
                     }
                     break;
             }
 
-            if (current != 6) {
+            if (current != 7) {
                 current += 1;
             } else {
                 current = 1; //回到3 跳過牛奶與堅果

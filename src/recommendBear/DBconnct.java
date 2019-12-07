@@ -102,6 +102,38 @@ public class DBconnct {
         return getOne;
     }
      
+     public String getRandomFoodNum(String type, String type2) {
+
+        ArrayList<String> food_list = new ArrayList<String>();
+
+        String sql = String.format("select fId\n" +
+        "from food_list\n" +
+        "inner join type_food on food_list.fType = tType\n" +
+        "where tName like '%s' or tName like '%s'",type,type2);
+        //System.out.println(sql);
+
+        try {
+            rs = sta.executeQuery(sql);
+            if (rs.next() == false) {
+                System.out.println("查無資料");
+            } else {
+                do { //開始輸出
+                    food_list.add(rs.getString("fId"));
+                } while (rs.next());
+                //System.out.println(msg);
+            }
+        } catch (SQLException ex) {
+            System.out.println("資料庫操作出問題:" + ex.toString());
+        }
+        
+        int size = food_list.size();
+        Random rnd = new Random();
+        int select = rnd.nextInt(size);
+        String getOne = food_list.get(select);
+        
+        return getOne;
+    }
+     
      public Food getFood(String id) {
 
         String sql = String.format("select *\n" +
