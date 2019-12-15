@@ -123,7 +123,8 @@ public class AppUI extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(totalTimeLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -133,9 +134,9 @@ public class AppUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBox_exerciseLevel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton_search, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                        .addComponent(jButton_search, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 387, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,7 +149,7 @@ public class AppUI extends javax.swing.JFrame {
                     .addComponent(totalTimeLabel1)
                     .addComponent(jComboBox_exerciseLevel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -158,8 +159,8 @@ public class AppUI extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,31 +172,31 @@ public class AppUI extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("菜單推薦", jPanel1);
 
-        jLabel_name.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name.setText("姓名");
 
-        jLabel_name1.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name1.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name1.setText("身高(Cm)");
 
-        jLabel_name2.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name2.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name2.setText("體重(Kg)");
 
-        jLabel_name3.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name3.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name3.setText("性別");
 
-        jLabel_name4.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name4.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name4.setText("出生年");
 
-        jLabel_showProtion.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_showProtion.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_showProtion.setText("50%");
 
         buttonGroup1.add(jRadioButton_boy);
-        jRadioButton_boy.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jRadioButton_boy.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jRadioButton_boy.setSelected(true);
         jRadioButton_boy.setText("我是帥哥");
 
         buttonGroup1.add(jRadioButton_girl);
-        jRadioButton_girl.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jRadioButton_girl.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jRadioButton_girl.setText("我是美女");
 
         jButton_saveInfo.setFont(new java.awt.Font("Microsoft JhengHei", 0, 18)); // NOI18N
@@ -214,19 +215,19 @@ public class AppUI extends javax.swing.JFrame {
             }
         });
 
-        jTextField_name.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jTextField_name.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jTextField_name.setToolTipText("輸入本次進場的分鐘數");
 
-        jTextField_height.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jTextField_height.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jTextField_height.setToolTipText("輸入本次進場的分鐘數");
 
-        jTextField_weight.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jTextField_weight.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jTextField_weight.setToolTipText("輸入本次進場的分鐘數");
 
-        jTextField_bornYear.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jTextField_bornYear.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jTextField_bornYear.setToolTipText("輸入本次進場的分鐘數");
 
-        jComboBox_projects.setFont(new java.awt.Font("Microsoft YaHei", 0, 15)); // NOI18N
+        jComboBox_projects.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jComboBox_projects.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "正常飲食", "增肌飲食", "減脂飲食" }));
 
         jSlider1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -235,18 +236,18 @@ public class AppUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel_name6.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
+        jLabel_name6.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
         jLabel_name6.setText("方案選擇");
 
-        jLabel_name7.setFont(new java.awt.Font("Microsoft YaHei", 0, 18)); // NOI18N
-        jLabel_name7.setText("重訓比例");
+        jLabel_name7.setFont(new java.awt.Font("Microsoft YaHei", 0, 24)); // NOI18N
+        jLabel_name7.setText("平均重訓比例");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(43, 43, 43)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -257,72 +258,80 @@ public class AppUI extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jRadioButton_girl))
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel_name1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel_name2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel_name, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel_name4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel_name6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel_name7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel_name, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel_name1))
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel_showProtion, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField_weight)
-                                        .addComponent(jTextField_height)
-                                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                            .addComponent(jTextField_bornYear)
-                                            .addGap(17, 17, 17))
-                                        .addComponent(jComboBox_projects, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(50, Short.MAX_VALUE))
+                                        .addGap(28, 28, 28)
+                                        .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(jTextField_height, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(85, 85, 85)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel_name4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel_name2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel_name6, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jTextField_bornYear, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                                .addComponent(jTextField_weight))
+                            .addComponent(jComboBox_projects, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel_name7, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel_showProtion, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jButton_setExample, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                        .addComponent(jButton_saveInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22))))
+                        .addGap(122, 122, 122)
+                        .addComponent(jButton_saveInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_name)
-                    .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_name3)
-                    .addComponent(jRadioButton_boy)
-                    .addComponent(jRadioButton_girl))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_name1)
-                    .addComponent(jTextField_height, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_name2)
-                    .addComponent(jTextField_weight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_name4)
-                    .addComponent(jTextField_bornYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox_projects, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_name6))
-                .addGap(20, 20, 20)
+                .addGap(50, 50, 50)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_showProtion)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_name7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_name)
+                            .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_name3)
+                            .addComponent(jRadioButton_boy)
+                            .addComponent(jRadioButton_girl))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_name1)
+                            .addComponent(jTextField_height, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_name2)
+                            .addComponent(jTextField_weight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_name4)
+                            .addComponent(jTextField_bornYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBox_projects, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_name6))))
+                .addGap(58, 58, 58)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel_showProtion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel_name7))
+                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_setExample, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_saveInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(50, 50, 50))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -332,7 +341,7 @@ public class AppUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -348,9 +357,7 @@ public class AppUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -373,11 +380,12 @@ public class AppUI extends javax.swing.JFrame {
                 String sentenceFormat = "你好，%s" + genderAdd + "\n身高=%.1f, 體重=%.1f, 年紀=%d, 選擇方案=%s";
                 resultOutput = String.format(sentenceFormat, this.username, this.height, this.weight, this.thisYear - this.bornYear, this.project);
                 jTextArea_result.setText(resultOutput);
-                jTextArea_result.append(String.format("\n%.1f\n", this.getBMR()));
-                jTextArea_result.append(String.format("\n%.1f\n", this.getTDEE(this.getBMR())));
+                jTextArea_result.append(String.format("\n基礎代謝率(BMR) = %.1f  |  ", this.getBMR()));
+                jTextArea_result.append(String.format("\n每日總消耗熱量(TDEE) = %.1f", this.getTDEE(this.getBMR())));
                 computeConsist(this.getTDEE(this.getBMR()));
-                //
-                make_food_list();
+                jTextArea_result.append(String.format("\n下餐建議攝取 = %s\n\n", Food.formaterForContent(protein, fat, carbohydrate, 1)));
+                jTextArea_result.append("以下為參考建議清單\n");
+                jTextArea_result.append(make_food_list());
             } else {
                 JOptionPane.showMessageDialog(null, "請輸入入場時間", "提示", JOptionPane.ERROR_MESSAGE);
             }
@@ -491,12 +499,13 @@ public class AppUI extends javax.swing.JFrame {
             fat = tdee * 0.3 / 9 / 3;
             carbohydrate = tdee * 0.55 / 4 / 3;
         }
+        foodList.initList();
         foodList.setProtein(protein); //先把原始要存的複製一份到清單 做最後的清點用
         foodList.setFat(fat);
         foodList.setCarbohydrate(carbohydrate);
     }
 
-    private void make_food_list() {
+    private String make_food_list() {
         boolean makeGrasp = true;
         int current = -1;
         int noGraspCount = 0;
@@ -512,7 +521,6 @@ public class AppUI extends javax.swing.JFrame {
                         protein -= (food.getProtein() * food.getLimit());
                         fat -= (food.getFat() * food.getLimit());
                         carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-
                     }
                     break;
                 case 0:
@@ -522,23 +530,27 @@ public class AppUI extends javax.swing.JFrame {
                         protein -= (food.getProtein() * food.getLimit());
                         fat -= (food.getFat() * food.getLimit());
                         carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-
                     }
                     break;
-
                 case 1:
-                    food = conn.getFood(conn.getRandomFoodNum("全榖雜糧類"));
+                    food = conn.getFood(conn.getRandomFoodNum("蔬菜類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
                         fat -= (food.getFat() * food.getLimit());
                         carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-
-                    } else {
-                        noGraspCount += 1;
                     }
                     break;
                 case 2:
+                    food = conn.getFood(conn.getRandomFoodNum("水果類"));
+                    if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
+                        this.foodList.add_food(food, food.getLimit()); //放食物與數量
+                        protein -= (food.getProtein() * food.getLimit());
+                        fat -= (food.getFat() * food.getLimit());
+                        carbohydrate -= (food.getCarbohydrate() * food.getLimit());
+                    }
+                    break;
+                case 3:
                     food = conn.getFood(conn.getRandomFoodNum("肉類", "魚類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
@@ -550,20 +562,8 @@ public class AppUI extends javax.swing.JFrame {
                         noGraspCount += 1;
                     }
                     break;
-                case 3:
-                    food = conn.getFood(conn.getRandomFoodNum("蛋類"));
-                    if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
-                        this.foodList.add_food(food, food.getLimit()); //放食物與數量
-                        protein -= (food.getProtein() * food.getLimit());
-                        fat -= (food.getFat() * food.getLimit());
-                        carbohydrate -= (food.getCarbohydrate() * food.getLimit());
-
-                    } else {
-                        noGraspCount += 1;
-                    }
-                    break;
                 case 4:
-                    food = conn.getFood(conn.getRandomFoodNum("豆類"));
+                    food = conn.getFood(conn.getRandomFoodNum("全榖雜糧類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
@@ -575,7 +575,7 @@ public class AppUI extends javax.swing.JFrame {
                     }
                     break;
                 case 5:
-                    food = conn.getFood(conn.getRandomFoodNum("蔬菜類"));
+                    food = conn.getFood(conn.getRandomFoodNum("蛋類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
@@ -587,7 +587,7 @@ public class AppUI extends javax.swing.JFrame {
                     }
                     break;
                 case 6:
-                    food = conn.getFood(conn.getRandomFoodNum("水果類"));
+                    food = conn.getFood(conn.getRandomFoodNum("豆類"));
                     if (Food.checkPut(food, protein, fat, carbohydrate)) { //如果還夠取
                         this.foodList.add_food(food, food.getLimit()); //放食物與數量
                         protein -= (food.getProtein() * food.getLimit());
@@ -598,12 +598,13 @@ public class AppUI extends javax.swing.JFrame {
                         noGraspCount += 1;
                     }
                     break;
+
                 case 7:
-                    if (noGraspCount != 6) {
+                    if (noGraspCount != 4) {
                         noGraspCount = 0;
                     } else {
                         makeGrasp = false; //全部都取不了 就跳出
-                        this.foodList.showAll();
+                        this.foodList.adjustList(); //進行調整
                     }
                     break;
             }
@@ -611,10 +612,10 @@ public class AppUI extends javax.swing.JFrame {
             if (current != 7) {
                 current += 1;
             } else {
-                current = 1; //回到3 跳過牛奶與堅果
+                current = 3; //回到3 跳過
             }
         }
-
+        return this.foodList.showAll();
     }
 
     /**

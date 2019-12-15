@@ -36,10 +36,10 @@ public class Food {
         this.type = type;
     }
 
-   public int getId() {
+    public int getId() {
         return id;
     }
-        
+
     public String getName() {
         return name;
     }
@@ -89,24 +89,42 @@ public class Food {
 
     public static String formaterForContent(double protein, double fat, double carbohydrate, int limit) {
         String result = "";
-        String proW= "";
-        String fatW= "";
+        String proW = "";
+        String fatW = "";
         String carW = "";
-                
+
         if (protein != 0.0) {
-            proW = String.format("蛋%.0f克、", protein*limit);
+            double tmp;
+            if (protein * limit > 0) {
+                tmp = protein * limit;
+            } else {
+                tmp = 0;
+            }
+            proW = String.format("蛋%.0f克、", tmp);
         }
         if (protein != 0.0) {
-            fatW = String.format("脂%.0f克、", fat*limit);
+            double tmp;
+            if (fat * limit > 0) {
+                tmp = fat * limit;
+            } else {
+                tmp = 0;
+            }
+            fatW = String.format("脂%.0f克、", tmp);
         }
         if (carbohydrate != 0.0) {
-            carW = String.format("醣%.0f克、", carbohydrate*limit);
+            double tmp;
+            if (carbohydrate * limit > 0) {
+                tmp = carbohydrate * limit;
+            } else {
+                tmp = 0;
+            }
+            carW = String.format("醣%.0f克、", tmp);
         }
-        
+
         result = proW + fatW + carW;
-        if(!result.equals("")){
-            result = result.substring(0, result.length()-1);
-        }else{
+        if (!result.equals("")) {
+            result = result.substring(0, result.length() - 1);
+        } else {
             result = "請輸入數值";
         }
 

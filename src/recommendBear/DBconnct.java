@@ -138,6 +138,7 @@ public class DBconnct {
 
         String sql = String.format("select *\n" +
         "from food_list\n" +
+        "inner join type_food on food_list.fType = tType\n" +
         "where fId = '%s'",id);
         Food food = new Food(); 
         //System.out.println(sql);
@@ -150,7 +151,7 @@ public class DBconnct {
 
                 //開始輸出
                 food = new Food(rs.getInt("fId"),rs.getString("fName"),rs.getString("fUnit"),rs.getInt("fWeight"),
-                        rs.getDouble("fProtein"),rs.getDouble("fFat"),rs.getDouble("fCarbohydrate"), rs.getInt("fLimit"), rs.getString("fType"));
+                        rs.getDouble("fProtein"),rs.getDouble("fFat"),rs.getDouble("fCarbohydrate"), rs.getInt("fLimit"), rs.getString("tName"));
 
                 //System.out.println(msg);
             }
